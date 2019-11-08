@@ -6,7 +6,7 @@ struct Student {
     char name[20];
     char id[20];
     int score;
-}student,MAX,MIN;
+}student,MAX,MIN;//学生个体和最高分学生和最低分学生，这样避免了使用数组来存储学生
 
 int main(void){
 
