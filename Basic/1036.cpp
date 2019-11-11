@@ -5,7 +5,7 @@
 int main(void){
     char a;
     int n,m;
-    scanf("%d%s",&n,&a);
+    scanf("%d %s",&n,&a);
     if(n%2==1)m=n/2+1;
     else m=n/2;
     for(int i=0;i<n;i++){
@@ -22,6 +22,7 @@ int main(void){
     for(int i=0;i<n;i++){
         printf("%c",a);
     }
+
 
 
     return 0;
