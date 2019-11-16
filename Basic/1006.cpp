@@ -4,17 +4,21 @@
 #include <stdio.h>
 int main(void){
     int a,i=0;
-    int b[10]={0};
+    int b[3]={0};
     scanf("%d",&a);
     do{
-        b[i]=a;
+        b[i]=a%10;
         a=a/10;
         i++;
-    }while (a>9);
-    for(int i=0;i<10;i++){
-        for(i)
+    }while (a>0);
+    for(int i=0;i<b[2];i++){
+        printf("B");
+
     }
-    for(int i=0;i<=a;i++){
+    for(int i=0;i<b[1];i++){
+        printf("S");
+    }
+    for(int i=1;i<=b[0];i++){
         printf("%d",i);
     }
     return 0;
