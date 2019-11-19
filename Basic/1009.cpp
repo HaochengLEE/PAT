@@ -9,9 +9,9 @@ int main(void){
         i++;
 
     }
-    for(int i=num-1;i>=0;i--){
-        printf("%s",a[i]);
-        if(i>0)printf(" ");
+    for(int j=i-1;j>=0;j--){
+        printf("%s",a[j]);
+        if(j>0)printf(" ");
     }
 
     return 0;
