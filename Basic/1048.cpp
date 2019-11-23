@@ -14,12 +14,15 @@ void reverse(char a[]){
 int main(void){
     char a[110],b[110],c[110]={0};
     scanf("%s%s",a,b);
+    //因为个位是第1位，所以判断奇偶位需要先把字符串倒过来
     reverse(a);
     reverse(b);
     int lenA=strlen(a);
     int lenB=strlen(b);
+    //选最长的串长度来做for条件
     int len=lenA>lenB?lenA:lenB;
     for(int i=0;i<len;i++){
+        //因为两个字符串不一样，所以要把短的空值赋成0，方便进行加减计算，同时把字符串换算成整型
         int numA=i<lenA?a[i]-'0':0;
         int numB=i<lenB?b[i]-'0':0;
         if(i%2==0){
