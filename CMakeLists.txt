@@ -5,6 +5,6 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
 
-add_executable(Run Advanced/1077.cpp)
+add_executable(Run Advanced/1082.cpp)
 
 
